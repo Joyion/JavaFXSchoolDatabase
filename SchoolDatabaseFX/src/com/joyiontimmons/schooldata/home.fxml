@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="mainPnl" minHeight="-Infinity" minWidth="-Infinity" prefHeight="308.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.joyiontimmons.schooldata.MainController">
+   <top>
+      <MenuBar prefHeight="26.0" prefWidth="612.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Settings">
+            <items>
+              <MenuItem fx:id="infoMenu" mnemonicParsing="false" onAction="#infoMenuClicked" text="Info" />
+                  <MenuItem fx:id="optionMenu" mnemonicParsing="false" onAction="#optionMenuClicked" text="Options" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Departments">
+            <items>
+              <MenuItem fx:id="departmentAddMenu" mnemonicParsing="false" onAction="#departmentAddMenuClicked" text="Add Department" />
+                  <MenuItem fx:id="departmentSearchMenu" mnemonicParsing="false" onAction="#departmentSearchMenuClicked" text="Search Departments" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Courses">
+            <items>
+              <MenuItem fx:id="courseAddMenu" mnemonicParsing="false" onAction="#courseAddMenuClicked" text="Add Course" />
+                  <MenuItem fx:id="courseSearchMenu" mnemonicParsing="false" onAction="#courseSearchMenuClicked" text="Search Courses" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Teachers">
+               <items>
+                  <MenuItem fx:id="teacherAddMenu" mnemonicParsing="false" onAction="#teacherAddMenuClicked" text="Add Teacher" />
+                  <MenuItem fx:id="teacherSearchMenu" mnemonicParsing="false" onAction="#teacherSearchMenuClicked" text="Search Teachers" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Students">
+               <items>
+                  <MenuItem fx:id="studentAddMenu" mnemonicParsing="false" onAction="#studentAddMenuClicked" text="Add Student" />
+                  <MenuItem fx:id="studentSearchMenu" mnemonicParsing="false" onAction="#studentSearchMenuClicked" text="Search Students" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Enrollments">
+               <items>
+                  <MenuItem fx:id="enrollmentAddMenu" mnemonicParsing="false" onAction="#enrollmentAddMenuClicked" text="Add Enrollment" />
+                  <MenuItem fx:id="enrollmentSearchMenu" mnemonicParsing="false" onAction="#enrollmentSearchMenuClicked" text="Search Enrollments" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Grades">
+               <items>
+                  <MenuItem fx:id="gradeAddMenu" mnemonicParsing="false" onAction="#gradeAddMenuClicked" text="Add Grade" />
+                  <MenuItem fx:id="gradeSearchMenu" mnemonicParsing="false" onAction="#gradeSearchMenuClicked" text="Search Grades" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Reports">
+               <items>
+                  <MenuItem fx:id="reportMenu" mnemonicParsing="false" onAction="#reportMenuClicked" text="Create Report" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <opaqueInsets>
+      <Insets top="10.0" />
+   </opaqueInsets>
+</BorderPane>
